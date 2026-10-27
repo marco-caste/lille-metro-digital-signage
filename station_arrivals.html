@@ -1,0 +1,247 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color:darkslategray;
+                margin: 0px;
+                margin-top: 0px;
+		    }
+            table{
+                border-collapse:collapse;
+		    	width: 1920px;
+		    	height:	540px;
+            }
+            p {
+                font-size: 80px;
+		    	font-family: 'Bookman Old Style', serif;
+                color: aliceblue;
+                line-height: 90px;
+            }
+            h1 {
+                font-size: 63px;
+		    	font-family: 'Bookman Old Style', serif;
+                color: aliceblue;
+                margin-bottom: 0px;
+            }
+            h3 {
+                font-size: 45px;
+		    	font-family: 'Bookman Old Style', serif;
+                color: black;
+                margin-bottom: 0px;
+            }
+            h4 {
+                font-size: 10px;
+		    	font-family: 'Bookman Old Style', serif;
+                color: aliceblue;
+                margin-bottom: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <!--intestazione-->
+                <th align="left">
+                    <p>&#160;DESTINATION</p>
+                </th>
+                <th align="right">
+                    <p>&#160;MIN&#160;</p>
+                </th>
+            </tr>
+            <tr bgcolor="black">
+                <!-- Dest1 -->
+                <td>
+                    <h1 id="d1"></h1>
+                </td>
+                <td>
+                    <!-- fra quanto arriva il primo-->
+                    <h1 id="primo" align="right"></h1>
+                    <script>
+                        var m=5;
+                        document.getElementById("primo").innerHTML= m+ "&#160;";
+                        setInterval(primo,60000)
+                        function primo(){
+                            --m;
+                            if(m==0) {
+                                m=5;
+                            }
+                            document.getElementById("primo").innerHTML= m + "&#160;";
+                        }
+                    </script>
+                </td>       
+            <tr bgcolor="black">
+                <!-- Dest2 -->
+                <td>
+                    <h1 id="d2"></h1>
+                </td>
+                <td>
+                    <!-- fra quanto arriva il secondo-->
+                    <h1 id="secondo" align="right"></h1>
+                    <script>
+                        var n=10;
+                        document.getElementById("secondo").innerHTML= n + "&#160;";
+                        setInterval(secondo,60000)
+                        function secondo(){
+                            --n;
+                            if(n==5) {
+                                n=10;
+                            }
+                            document.getElementById("secondo").innerHTML= n + "&#160;";
+                        }
+                    </script> 
+                </td>   
+            </tr>
+            <tr bgcolor="black">
+                <!-- Dest3 -->
+                <td>
+                    <h1 id="d3"></h1>
+                </td>
+                <td>
+                    <!-- fra quanto arriva il terzo-->
+                    <h1 id="terzo" align="right"></h1>
+                    <script>
+                        var q=15;
+                        document.getElementById("terzo").innerHTML= q + "&#160;";
+                        setInterval(terzo,60000)
+                        function terzo(){
+                            --q;
+                            if(q==10) {
+                                q=15;
+                            }
+                            document.getElementById("terzo").innerHTML= q + "&#160;";
+                        }
+                    </script> 
+                </td>   
+            </tr>
+            <tr bgcolor="black">
+                <!-- Dest4 -->
+                <td>
+                    <h1 id="d4"></h1>
+                </td>
+                <td>
+                    <!-- fra quanto arriva il quarto-->
+                    <h1 id="quarto" align="right"></h1>
+                    <script>
+                        var s=20;
+                        document.getElementById("quarto").innerHTML= s + "&#160;";
+                        setInterval(quarto,60000)
+                        function quarto(){
+                            --s;
+                            if(s==15) {
+                                s=20;
+                            }
+                            document.getElementById("quarto").innerHTML= s + "&#160;";
+                        }
+                    </script>
+                </td>
+            </tr>
+            <tr bgcolor="black">
+                <!-- Dest5 -->
+                <td>
+                    <h1 id="d5"></h1>
+                </td>
+                <td>
+                    <!-- fra quanto arriva il quinto-->
+                    <h1 id="quinto" align="right"></h1>
+                    <script>
+                        var l=25;
+                        document.getElementById("quinto").innerHTML= l + "&#160;";
+                        setInterval(quinto,60000)
+                        function quinto(){
+                            --l;
+                            if(l==20) {
+                                l=25;
+                            }
+                            document.getElementById("quinto").innerHTML= l + "&#160;";
+                        }
+                    </script>
+                </td>
+            </tr>
+            <tr bgcolor="black">
+                <td>
+                    <h4 id="e"></h4>
+                    <script> 
+                        var i="Primary"; y="Secondary"
+                        document.getElementById("e").innerHTML= y;
+                    </script>
+                </td>
+                <td></td>            
+            </tr>
+            <tr bgcolor="yellow">
+                <!-- piè -->
+                <td>
+                    <!-- Preghiamo di non oltrepassare la linea gialla e di indossare la mascherina.-->
+                    <h3 id="tes"><marquee>Please  wear a mask.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Merci de porter un masque.</marquee></h3>
+                </td>
+                <td>
+                    <h3 id="ora" align="right"></h3>
+                </td>
+            </tr>
+            <script>
+
+                //traduzione
+                /*var a=0;
+                setInterval(cambio,5000)
+                function cambio(){
+                    a++;
+                    if(a%2==0) {
+                        document.getElementById("tes").innerHTML= "";
+                    }
+                    else {
+                        document.getElementById("tes").innerHTML= "";
+                    }
+                }*/
+
+                //orologio
+                setInterval(orologio, 1000);
+                function orologio() {
+                    const d = new Date();
+                    var or;
+                    if (d.getMinutes()<10) {
+                        if(d.getHours()<0) {
+                            or="0" + d.getHours() + ":0" + d.getMinutes();
+                        }
+                        else{
+                            or= d.getHours() + ":0" + d.getMinutes();
+                        }
+                    }
+                    else {
+                        if(d.getHours()<0) {
+                            or="0" + d.getHours() + ":" + d.getMinutes();
+                        }
+                        else{
+                            or= d.getHours() + ":" + d.getMinutes();
+                        }
+                    }
+                    document.getElementById("ora").innerHTML = or + "&#160;";
+                }
+
+                //cambio destinazione
+                var d1="&#160;Lille", d2="&#160;Paris", d3="&#160;Marseille", d4="&#160;Montpellier", d5="&#160;Nice", d6="&#160;Lyon", d7="&#160;Bordeaux", d8="&#160;Nantes", temp;
+                document.getElementById("d1").innerHTML = d1;
+                document.getElementById("d2").innerHTML = d2;
+                document.getElementById("d3").innerHTML = d3;
+                document.getElementById("d4").innerHTML = d4;
+                document.getElementById("d5").innerHTML = d5;
+                setInterval(cambio, 300000);
+                function cambio() {
+                    temp=d1;
+                    d1=d2;
+                    d2=d3;
+                    d3=d4;
+                    d4=d5;
+                    d5=d6;
+                    d6=d7;
+                    d7=d8;
+                    d8=temp;
+                    document.getElementById("d1").innerHTML = d1;
+                    document.getElementById("d2").innerHTML = d2;
+                    document.getElementById("d3").innerHTML = d3;
+                    document.getElementById("d4").innerHTML = d4;
+                    document.getElementById("d5").innerHTML = d5;
+                }
+
+            </script>  
+        </table>
+    </body>
+</html>

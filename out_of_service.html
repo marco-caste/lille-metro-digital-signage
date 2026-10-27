@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            body {
+		    	width: 1920px;
+		    	height:	540px;
+                background-image: url(errorenero.gif);
+                background-color: black;
+                margin: 0px;
+		    }
+            h1 {
+                font-size: 100px;
+		    	font-family: 'Times New Roman', Times, serif;;
+                color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <br> <br>
+        <h1 id="se" align="center"/></h1>
+        <h1 id="ci" align="center"/></h1>
+        <script>
+            var a=0;
+            setInterval(cambio,5000)
+            document.getElementById("se").innerHTML= "Service unavailable";
+            document.getElementById("ci").innerHTML= "We apologize for the inconvenience";
+            function cambio(){
+                a++;
+                if(a%2==0) {
+                    document.getElementById("se").innerHTML= "Service unavailable";
+                    document.getElementById("ci").innerHTML= "We apologize for the inconvenience";
+                }
+                else {
+                    document.getElementById("se").innerHTML= "Service indisponible";
+                    document.getElementById("ci").innerHTML= "Nous excusons pour le d&#233;rangement";
+                }
+            }
+            var n=0;
+			setInterval(BgColor, 2000);
+			function BgColor() {
+				n=n+1;
+				if (n%2==0){
+					document.body.style.backgroundColor = "black";
+				}
+ 				else {
+					document.body.style.backgroundColor = "slategray";
+				}		
+			}
+        </script>
+    </body>
+</html>

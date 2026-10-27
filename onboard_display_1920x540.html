@@ -1,0 +1,601 @@
+<html>
+    <head>
+        <style>
+            body {
+                height: 540px;
+                width: 1920px;
+                margin: 0px;
+                font-family: 'Bookman Old Style', serif;
+                background-color: aliceblue;
+            }
+            h1 {
+                font-size: 85px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+            h2 {
+                font-size: 50px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+            h3 {
+                font-size: 40px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+            h4 {
+                font-size: 140px;
+                color: black;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+            h5 {
+                font-size: 60px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                text-align: center;
+            }
+            p {
+                font-weight: bold;
+                color: aliceblue;
+                font-size: 40px;
+                margin: 0px;
+                writing-mode: vertical-lr;
+                /*transform: rotate(-30deg);
+                position: absolute;*/
+            }
+            table, th, td {
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+                border: none;
+                border-collapse: collapse;
+            }
+            .rect-circ {
+                width: auto;
+                height: auto;
+                position: relative;
+            }
+            .circle {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border-color: black;
+                position: absolute;
+                bottom: 10px;
+                top: 0px;
+                left: 10px;
+                background: aliceblue;
+                align-items: middle;
+            }
+            .circles {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border-color: black;
+                position: absolute;
+                left: 10px;
+                bottom: 10px;
+                top: 0px;
+                background: gray;
+            }
+            .rectangle2 {
+                width: 535px;
+                height: 30px;
+                left: 390px;
+                background: violet;
+                margin-top: 0px;
+                position: absolute;
+                bottom: 10px;
+                top: 45px;
+            }
+            .rectangle3 {
+                width: 770px;
+                height: 30px;
+                left: 300px;
+                background: violet;
+                margin-top: 0px;
+                position: absolute;
+                bottom: 10px;
+                top: 45px;
+            }
+            .rectangle4 {
+                width: 900px;
+                height: 30px;
+                left: 250px;
+                background: violet;
+                margin-top: 0px;
+                position: absolute;
+                bottom: 10px;
+                top: 45px;
+            }
+            .rectangle5 {
+                width: 1025px;
+                height: 30px;
+                left: 180px;
+                background: violet;
+                margin-top: 0px;
+                position: absolute;
+                bottom: 10px;
+                top: 45px;
+            }
+            .rectangle6 {
+                width: 1085px;
+                height: 30px;
+                left: 155px;
+                background: violet;
+                margin-top: 0px;
+                position: absolute;
+                bottom: 10px;
+                top: 45px;
+            }
+            .rectangle7 {
+                width: 1125px;
+                height: 30px;
+                left: 140px;
+                background: violet;
+                margin-top: 0px;
+                position: absolute;
+                bottom: 10px;
+                top: 45px;
+            }
+            .rectangle8 {
+                width: 1160px;
+                height: 30px;
+                left: 125px;
+                background: violet;
+                margin-top: 0px;
+                position: absolute;
+                bottom: 10px;
+                top: 45px;
+            }
+            .rectangle9 {
+                width: 1190px;
+                height: 30px;
+                left: 115px;
+                background: violet;
+                margin-top: 0px;
+                position: absolute;
+                bottom: 10px;
+                top: 45px;
+            }
+            .rectangle10 {
+                width: 1210px;
+                height: 30px;
+                left: 105px;
+                background: violet;
+                margin-top: 0px;
+                position: absolute;
+                bottom: 10px;
+                top: 45px;
+            }
+            .rectangle11 {
+                width: 1240px;
+                height: 30px;
+                left: 95px;
+                background: violet;
+                margin-top: 0px;
+                position: absolute;
+                bottom: 10px;
+                top: 45px;
+            }
+            .rectangle12 {
+                width: 1260px;
+                height: 30px;
+                left: 85px;
+                background: violet;
+                margin-top: 0px;
+                position: absolute;
+                bottom: 10px;
+                top: 45px;
+            }
+            .centered {
+                position: absolute;
+                background-color: black;
+                width: 1430px;
+                height: 350px;
+                vertical-align: middle;
+                top: 0px;
+            }
+            .button {
+                background-color: red;
+                border: none;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                font-size: 60px;
+                width: 100%;
+                height: 100%;
+                font-family: 'Bookman Old Style', serif;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <table width="1920">                                                                            
+            <tr height="540">
+              <td>
+                <table width="1430" bgcolor="black" >
+                    <tr height="350">
+                        <td>
+                            <div id="lin"><table width="1430">
+                                <tr height="90">
+<!-- linea -->
+                                    <td id="c"></td>
+                                    <div id="r"></div>
+                                    <td>
+                                        <div id="rc1" class="rect-circ">
+                                            <div id="d1"> </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div id="rc2" class="rect-circ">
+                                            <div id="d2"> </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div id="rc3" class="rect-circ">
+                                            <div id="d3"> </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div id="rc4" class="rect-circ">
+                                            <div id="d4"> </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div id="rc5" class="rect-circ">
+                                            <div id="d5"> </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div id="rc6" class="rect-circ">
+                                            <div id="d6"> </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div id="rc7" class="rect-circ">
+                                            <div id="d7"> </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div id="rc8" class="rect-circ">
+                                            <div id="d8"> </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div id="rc9" class="rect-circ">
+                                            <div id="d9"> </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div id="rc10" class="rect-circ">
+                                            <div id="d10"> </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div id="rc11" class="rect-circ">
+                                            <div id="d11"> </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div id="rc12" class="rect-circ">
+                                            <div id="d12"> </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr height="260" valign="top" align="left">
+<!-- fermate -->
+                                    <td width="30"></td>
+                                    <td><p id="s1"></p></td>
+                                    <td><p id="s2"></p></td>
+                                    <td><p id="s3"></p></td>
+                                    <td><p id="s4"></p></td>
+                                    <td><p id="s5"></p></td>
+                                    <td><p id="s6"></p></td>
+                                    <td><p id="s7"></p></td>
+                                    <td><p id="s8"></p></td>
+                                    <td><p id="s9"></p></td>
+                                    <td><p id="s10"></p></td>
+                                    <td><p id="s11"></p></td>
+                                    <td><p id="s12"></p></td>
+                                </tr>
+                            </table></div>
+                            <div class="centered" id="fer">
+                                <center><h4 id="benv"></h4><h4 id="citt"></h4></center>
+                            </div>
+                            <audio id="arrivo">
+                                <source src="arrivo.mp3" type="audio/mp3">
+                            </audio>
+                        </td>
+                    </tr>
+                    <tr height="190" border="none">
+                        <td border="none">
+                            <table border="none">
+                                <tr height="70" bgcolor="red" id="st" border="none">
+                                    <td border="none">
+                                        <button id="bu" class="button" type="button" onclick="vero()"><h5>STOP</h5></button>
+                                        <audio id="camp">
+                                            <source src="campanello.mp3" type="audio/mp3">
+                                        </audio>
+                                    </td border="none">
+                                    <td colspan="2" border="none">
+                                        <h5 id="fnp"></h5>
+                                    </td>
+                                </tr>
+                                <tr height="120"  bgcolor="violet" border="none">
+                                    <!-- numero linea -->
+                                    <td width="190" border="none">
+                                        <center><h1>8C</h1></center>
+                                    </td>
+                                    <!-- prossima fermata -->
+                                    <td width="1220" border="none">
+                                        <marquee><h1 id="pf"></h1></marquee>
+                                    </td>
+                                    <!-- ritardo -->
+                                    <td width="220" border="none">
+                                        <center><h2 id="ri"></h2><h2>2 min</h2></center>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+              </td>
+              <td>
+                <table width="490">
+                    <tr height="490">
+                        <!-- pubblicità -->
+                        <td colspan="2" width="490">
+                            <img id="img" src="pubblicit.jpeg" width="490" height="490"/>
+                            <video  id="vid" width="490" height="490" autoplay loop>
+                                <source src="mascherina.mov" type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                    <tr height="50"  bgcolor="yellow">
+                        <!-- messaggio -->
+                        <td>
+                            <marquee><h3>Please wear the mask.&#160;&#160; Merci de porter un masque.</h3></marquee>
+                        </td>
+                        <!-- orario -->
+                        <td><h3 id="ora"></h3></td>
+                    </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <script type="text/javascript" src="stops.js"></script>
+          <script>
+            //numero e colore linea
+            /*document.getElementById("colorline").style.backgroundColor = color;
+            document.getElementById("r").style.backgroundColor = color;
+            document.getElementById("nline").innerHTML = nline;*/
+
+            //tempo
+            var rand, vrand;
+            setInterval(random, 1000);
+            function random() {
+                rand = Math.round(Math.random() * 50001 + 20000);
+                vrand=rand-10000;
+            }
+
+            //pulsante stop
+            var puls, col;
+            function vero() {
+                puls=true;
+                document.getElementById("camp").play();
+            }
+            function falso() {
+                puls=false;
+            }
+            function controllo() {
+                if (puls==false) {
+                    document.getElementById("st").style.backgroundColor = "red";
+                    document.getElementById("bu").style.backgroundColor = "red";
+                    document.getElementById("fnp").innerHTML="";
+                    document.getElementById("bu").style.color= "white";
+                }
+                else {
+                    document.getElementById("st").style.backgroundColor = "red";
+                    document.getElementById("st").style.color= "white";
+                    document.getElementById("fnp").innerHTML="Stop booked &#160;&#160;&#160;&#160;&#160;&#160; Arr&#234;t r&#233;serv&#233;";  
+                    document.getElementById("bu").style.backgroundColor = "red";
+                    document.getElementById("bu").style.color= "white";
+                }
+            }
+            setInterval(controllo,1);
+            falso();
+            setTimeout(ciclo,10000);
+            function ciclo() {
+                falso();
+                setInterval(falso, rand);
+            }
+
+            //orologio
+            setInterval(orologio, 1);
+            function orologio() {
+                const d = new Date();
+                var or;
+                if (d.getMinutes()<10) {
+                    if(d.getHours()<0) {
+                        or="0" + d.getHours() + ":0" + d.getMinutes();
+                    }
+                    else{
+                        or= d.getHours() + ":0" + d.getMinutes();
+                    }
+                }
+                else {
+                    if(d.getHours()<0) {
+                        or="0" + d.getHours() + ":" + d.getMinutes();
+                    }
+                    else{
+                        or= d.getHours() + ":" + d.getMinutes();
+                    }
+                }
+                document.getElementById("ora").innerHTML ="&#160;" + or + "&#160;";
+            }
+
+            //sfondo ad intermittenza			
+            var n=0;
+            BgColor();			
+            setInterval(BgColor, 500);			
+            function BgColor() {
+                n=n+1;
+                if (n%2==0){
+                    document.getElementById("fer").style.backgroundColor = "aliceblue";
+                }
+                 else {
+                    document.getElementById("fer").style.backgroundColor = "lightgray";
+                }		
+            }
+
+            //pallino
+            const id1=document.getElementById("d1"), id2=document.getElementById("d2"), id3=document.getElementById("d3"), id4=document.getElementById("d4"), id5=document.getElementById("d5"), id11=document.getElementById("d11");
+            const id6=document.getElementById("d6"), id7=document.getElementById("d7"), id8=document.getElementById("d8"), id9=document.getElementById("d9"), id10=document.getElementById("d10"), id12=document.getElementById("d12");
+            const ids1=document.getElementById("s1"), ids2=document.getElementById("s2"), ids3=document.getElementById("s3"), ids4=document.getElementById("s4"), ids5=document.getElementById("s5"), ids11=document.getElementById("s11");
+            const ids6=document.getElementById("s6"), ids7=document.getElementById("s7"), ids8=document.getElementById("s8"), ids9=document.getElementById("s9"), ids10=document.getElementById("s10"), ids12=document.getElementById("s12");
+            const idrc1=document.getElementById("rc1"), idrc2=document.getElementById("rc2"), idrc3=document.getElementById("rc3"), idrc4=document.getElementById("rc4"), idrc5=document.getElementById("rc5"), idrc11=document.getElementById("rc11");
+            const idrc6=document.getElementById("rc6"), idrc7=document.getElementById("rc7"), idrc8=document.getElementById("rc8"), idrc9=document.getElementById("rc9"), idrc10=document.getElementById("rc10"); idrc12=document.getElementById("rc12");
+            const idr=document.getElementById("r"), idc=document.getElementById("c");
+            var max;
+            declare();
+            function declare() {
+                if  (stops[3]==null && stops[2]!=null) {max=2; idr.className= "rectangle2"; idc.style.width= "365"}
+                if  (stops[4]==null && stops[3]!=null) {max=3; idr.className= "rectangle3"; idc.style.width= "275"}
+                if  (stops[5]==null && stops[4]!=null) {max=4; idr.className= "rectangle4"; idc.style.width= "225"}
+                if  (stops[6]==null && stops[5]!=null) {max=5; idr.className= "rectangle5"; idc.style.width= "155"}
+                if  (stops[7]==null && stops[6]!=null) {max=6; idr.className= "rectangle6"; idc.style.width= "130"}
+                if  (stops[8]==null && stops[7]!=null) {max=7; idr.className= "rectangle7"; idc.style.width= "115"}
+                if  (stops[9]==null && stops[8]!=null) {max=8; idr.className= "rectangle8"; idc.style.width= "100"}
+                if  (stops[10]==null && stops[9]!=null) {max=9; idr.className= "rectangle9"; idc.style.width= "90"}
+                if  (stops[11]==null && stops[10]!=null) {max=10; idr.className= "rectangle10"; idc.style.width= "80"}
+                if  (stops[12]==null && stops[11]!=null) {max=11; idr.className= "rectangle11"; idc.style.width= "70"}
+                if  (stops[13]==null && stops[12]!=null) {max=12; idr.className= "rectangle12"; idc.style.width= "60"}
+                if  (stops[1]!=null)  {ids1.innerHTML = stops[1]; id1.className = "circle"}
+                if  (stops[2]!=null)  {ids2.innerHTML = stops[2]; id2.className = "circles"}
+                if  (stops[3]!=null)  {ids3.innerHTML = stops[3]; id3.className = "circle"}
+                if  (stops[4]!=null)  {ids4.innerHTML = stops[4]; id4.className = "circle"}                
+                if  (stops[5]!=null)  {ids5.innerHTML = stops[5]; id5.className = "circle"}                
+                if  (stops[6]!=null)  {ids6.innerHTML = stops[6]; id6.className = "circle"}                
+                if  (stops[7]!=null)  {ids7.innerHTML = stops[7]; id7.className = "circle"}                
+                if  (stops[8]!=null)  {ids8.innerHTML = stops[8]; id8.className = "circle"}                
+                if  (stops[9]!=null)  {ids9.innerHTML = stops[9]; id9.className = "circle"}                
+                if  (stops[10]!=null)  {ids10.innerHTML = stops[10]; id10.className = "circle"}
+                if  (stops[11]!=null)  {ids11.innerHTML = stops[11]; id11.className = "circle"} 
+                if  (stops[12]!=null)  {ids12.innerHTML = stops[12]; id12.className = "circle"}
+            }
+            var k=2, t=1;
+            function pallino () { 
+                switch(k) {
+                    case 1: id1.classList.replace('circle', 'circles'); id2.classList.replace('circles', 'circle'); break;
+                    case 2: id2.classList.replace('circle', 'circles'); id1.classList.replace('circles', 'circle'); id3.classList.replace('circles', 'circle'); break;
+                    case 3: id3.classList.replace('circle', 'circles'); id2.classList.replace('circles', 'circle'); id4.classList.replace('circles', 'circle'); break;
+                    case 4: id4.classList.replace('circle', 'circles'); id3.classList.replace('circles', 'circle'); id5.classList.replace('circles', 'circle'); break;
+                    case 5: id5.classList.replace('circle', 'circles'); id4.classList.replace('circles', 'circle'); id6.classList.replace('circles', 'circle'); break;
+                    case 6: id6.classList.replace('circle', 'circles'); id5.classList.replace('circles', 'circle'); id7.classList.replace('circles', 'circle'); break;
+                    case 7: id7.classList.replace('circle', 'circles'); id6.classList.replace('circles', 'circle'); id8.classList.replace('circles', 'circle'); break;
+                    case 8: id8.classList.replace('circle', 'circles'); id7.classList.replace('circles', 'circle'); id9.classList.replace('circles', 'circle'); break;
+                    case 9: id9.classList.replace('circle', 'circles'); id8.classList.replace('circles', 'circle'); id10.classList.replace('circles', 'circle'); break;
+                    case 10: id10.classList.replace('circle', 'circles'); id9.classList.replace('circles', 'circle'); break;
+                }
+            }
+            setTimeout(scorrere, 10000);
+            proxfermata();
+            function proxfermata() {
+                document.getElementById("arrivo").play();    
+                document.getElementById("pf").innerHTML= "Next stop: " + stops[k] + "&#160;&#160;&#160;&#160;Prochaine &#233;tape : " + stops[k];
+            }
+            function scorrere() {
+                pallino();         
+                if (k==max) {
+                    t=k;
+                    --k;
+                }
+                else {
+                    if (k==1) {
+                        t=k;
+                        ++k;
+                    }
+                    else {
+                        if(k>t) {
+                            t=k;
+                            ++k;
+                        }
+                        else {
+                            t=k;
+                            --k;
+                        }
+                    }
+                }
+                document.getElementById("arrivo").play();
+                setTimeout(scorrere, rand);
+                setTimeout(proxfermata,vrand);
+            }
+            
+            //traduzione
+            var b=0;
+            setInterval(traduzione, 2000);
+            traduzione();
+            function traduzione() {
+                b++;
+                document.getElementById("citt").innerHTML= stops[t];
+                if(b%2==0) {
+                    document.getElementById("benv").innerHTML= "Welcome to ";
+                    document.getElementById("ri").innerHTML= "Delay:";
+                }
+                else {
+                    document.getElementById("benv").innerHTML="Bienvenue &#224; ";
+                    document.getElementById("ri").innerHTML= "Retard:";
+                }
+            }
+
+            //alternanza linea-fermata
+            const linid = document.getElementById("lin"), ferid = document.getElementById("fer");
+            ferid.style.display = "block";
+            linid.style.display = "none";
+            setTimeout (lin_fer, 10000);
+            function lin() {
+                    ferid.style.display = "none";
+                    linid.style.display = "block";
+                }
+            function benvenuti() {
+                ferid.style.display = "block";
+                linid.style.display = "none";
+            }
+            function lin_fer() {
+                lin();
+                setTimeout(benvenuti,vrand);
+                setTimeout(lin_fer,rand);
+            }
+
+            //alternanza immagini-video
+            const imgid = document.getElementById("img"), videoid = document.getElementById("vid");
+            function switch1 () {
+                imgid.src="pubblicit.jpeg";
+            }
+            function switch2 () {
+                imgid.src="volantino.jpeg";
+            }
+            img_vid();
+            function img_vid() {
+                img();
+                setTimeout(vid,20000);
+                setInterval(img,30000);
+                function img() {
+                    imgid.style.display = "block";
+                    videoid.style.display = "none";
+                    switch2();
+                    setTimeout(switch1,10000);
+                    setTimeout(vid,20000);
+                }
+                function vid(){
+                    imgid.style.display = "none";
+                    videoid.style.display = "block";
+                    videoid.play();
+                }
+            }
+
+        </script>
+    </body>
+</html>
